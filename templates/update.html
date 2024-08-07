@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User</title>
+</head>
+<body>
+    <h1>Update User</h1>
+    <form method="post" action="/update">
+        <input type="hidden" name="id" value="{{.ID}}">
+        <label>Name:</label>
+        <input type="text" name="name" value="{{.Name}}" required><br>
+        <label>Age:</label>
+        <input type="number" name="age" value="{{.Age}}" required><br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="/read">Back to List</a>
+</body>
+</html>

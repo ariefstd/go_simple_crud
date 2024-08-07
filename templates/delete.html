@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete User</title>
+</head>
+<body>
+    <h1>Delete User</h1>
+    <form method="post" action="/delete">
+        <input type="hidden" name="id" value="{{.ID}}">
+        <p>Are you sure you want to delete user with ID {{.ID}}?</p>
+        <input type="submit" value="Delete">
+    </form>
+    <a href="/read">Back to List</a>
+</body>
+</html>
